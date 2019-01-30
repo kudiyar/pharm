@@ -7,8 +7,8 @@ Created on Tue Jan 29 13:19:36 2019
 
 import sys
 # filename
-#input_file = str(sys.argv[1])
-input_file = r'C:\Users\Asus\Documents\GitHub\pharmacy_count\itcont.txt'
+input_file = str(sys.argv[1])
+#input_file = r'C:\Users\Asus\Documents\GitHub\pharmacy_count\itcont.txt'
 # reading the rest of the file
 data = []
 drugs = {}
@@ -31,8 +31,8 @@ with open(input_file, 'r') as file:
             drugs[line[drug_name]] = [[line[prescriber_id]], int(line[drug_cost])]
       
 output_data = sorted(drugs.items(), key=lambda x: (-x[1][1], x[0]))    
-output_file = r'C:\Users\Asus\Documents\GitHub\pharmacy_count\top_cost_drug.txt'
-#output_file = str(sys.argv[2])
+#output_file = r'C:\Users\Asus\Documents\GitHub\pharmacy_count\top_cost_drug.txt'
+output_file = str(sys.argv[2])
 with open(output_file,"w") as file1:
     output = ["drug_name,num_prescriber,total_cost\n"]
     output += [output_line[0] + ',' + str(len(output_line[1][0])) + ',' + 
