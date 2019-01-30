@@ -31,9 +31,10 @@ with open(input_file, 'r') as file:
       
 output_data = sorted(drugs.items(), key=lambda x: (-x[1][1], x[0]))    
 #output_file = r'C:\Users\Asus\Documents\GitHub\pharmacy_count\top_cost_drug.txt'
-output_file = str(sys.argv[2])
-with open(output_file,"w") as file1:
-    output = ["drug_name,num_prescriber,total_cost\n"]
-    output += [output_line[0] + ',' + str(len(output_line[1][0])) + ',' + 
-               str(output_line[1][1]) + '\n' for output_line in output_data]     
-    file1.writelines(output)
+#with open(output_file,"w") as file1:
+file1 = open(str(sys.argv[2]), "w")
+output = ["drug_name,num_prescriber,total_cost\n"]
+output += [output_line[0] + ',' + str(len(output_line[1][0])) + ',' + 
+           str(output_line[1][1]) + '\n' for output_line in output_data]     
+file1.writelines(output)
+file1.close()
