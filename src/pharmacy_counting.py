@@ -11,7 +11,7 @@ input_file = str(sys.argv[1])
 #input_file = r'C:\Users\Asus\Documents\GitHub\pharmacy_count\itcont.txt'
 # reading the rest of the file
 drugs = {}
-with open(input_file, 'r') as file:
+with open(input_file) as file:
     headers = next(file).strip('\n').split(',')
     # variable indices
     prescriber_id = headers.index('id')
