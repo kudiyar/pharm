@@ -11,7 +11,7 @@ The problem at hand is to generate a list of all drugs, the total number of UNIQ
 # Steps to solve the problem
 * Read the text file line by line
 * Create a dictionary with drug name as a key and a list containing unique prescribers and total cost for that drug as a value 
-* After the last line, sort the dictionary with descending value for total cost and ascending value for drug name if there is tie
+* After the last line, sort the dictionary with descending value for total cost and ascending value for drug name if there is a tie
 * Write the dictionary items in an output file
 
 # Run Instructions
