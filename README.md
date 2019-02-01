@@ -1,11 +1,8 @@
 # Table of Contents
 1. [Problem](README.md#problem)
-1. [Steps to solve the problem](README.md#steps-to-submit-your-solution)
-1. [Input Dataset](README.md#input-dataset)
-1. [Instructions](README.md#instructions)
-1. [Output](README.md#output)
-1. [Tips on getting an interview](README.md#tips-on-getting-an-interview)
-1. [Questions?](README.md#questions?)
+1. [Steps to solve the problem](README.md#steps-to-solve-the-problem)
+1. [Run Instructions](README.md#run-instructions)
+1. [Notes](README.md#notes)
 
 # Problem
 
@@ -17,7 +14,7 @@ The problem at hand is to generate a list of all drugs, the total number of UNIQ
 * After the last line, sort the dictionary with descending value for total cost and ascending value for drug name if there is tie
 * Write the dictionary items in an output file
 
-# Run instructions
+# Run Instructions
 Using the command line on a Linux machine, you run the same way as in run.sh file except for three arguments you have to specify the location of the data file along with its name and locations for output files along with the names you give to the files.
 
 # Notes
